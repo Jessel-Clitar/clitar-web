@@ -33,7 +33,8 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/logo.jpg');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form method="POST" action="{{ url ('/login') }}" class="login100-form validate-form" >
+					@csrf
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
@@ -43,12 +44,12 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username">
+						<input class="input100" :value="old('Username')" type="text" name="username" placeholder="Username">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" :value="old('password')" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
@@ -66,7 +67,7 @@
 
 					<div class="text-center p-t-90">
 						<a class="txt1" href="{{ route ('register') }}">
-							Don't have an account?
+							Don't have an account? CLICK ME
 						</a>
 					</div>
 				</form>

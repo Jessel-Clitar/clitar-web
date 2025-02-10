@@ -40,7 +40,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">JESSEL CLITAR</div>
+                <div class="masthead-subheading">Jessel Clitar</div>
                 <div class="masthead-heading text-uppercase">HELLO MGA KA CUTIE</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
             </div>
